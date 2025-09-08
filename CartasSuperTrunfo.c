@@ -7,6 +7,8 @@ int main() {
     float super_poder1, super_poder2;
     unsigned int populacao1, populacao2;
 
+    //Carta 1
+
     printf("Digite o Estado da carta 1 (exemplo: A a H): ");
     scanf("%s", estado1);
 
@@ -31,11 +33,12 @@ int main() {
     densidade1 = (float)populacao1 / area1; // Cálculo da densidade populacional
     pib_per_capita1 = (float)pib1 / populacao1; // Cálculo do PIB per capita
 
-    // Cálculo do Super Poder da carta 1
-    super_poder1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + pib_per_capita1 + (1.0f / densidade1);
+    
+    super_poder1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + pib_per_capita1 + (1.0f / densidade1); // Cálculo do Super Poder da carta 1
 
 
     // Carta 2
+
     printf("Digite o Estado da carta 2 (exemplo: A a H): ");
     scanf("%s", estado2);
 
@@ -64,6 +67,7 @@ int main() {
 
 
     // Carta 1
+
     printf("\n\n"); // Espaço entre as cartas
     printf("Carta 1\n"); // Imprime os dados da carta 1
     printf("Estado: %s\n", estado1);
@@ -80,6 +84,7 @@ int main() {
     printf("Super Poder: %.2f\n", super_poder1);  // Imprime o Super Poder da carta 1
 
     // Carta 2
+
     printf("\n\n");
     printf("Carta 2\n");
     printf("Estado: %s\n", estado2);
@@ -95,7 +100,9 @@ int main() {
     printf("PIB per capita: %.2f\n", pib_per_capita2);
     printf("Super Poder: %.2f\n", super_poder2);
 
+
     //Comparação dos super poderes
+
     printf("\n\nComparacao de Cartas:\n");
 
     // Comparação de População
