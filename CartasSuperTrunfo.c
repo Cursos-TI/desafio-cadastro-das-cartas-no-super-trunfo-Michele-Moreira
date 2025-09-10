@@ -101,7 +101,7 @@ int main() {
     printf("Super Poder: %.2f\n", super_poder2);
 
 
-    //Comparação dos super poderes
+    //Comparação dos super poderes:
 
     printf("\n\nComparacao de Cartas:\n");
 
@@ -153,7 +153,20 @@ int main() {
     } else {
         printf("Super Poder: Carta 2 venceu (0)\n");
     }
-    
+
+    //Comparação de cartas (Atributo: População):
+
+    printf("\nComparacao de cartas (Atributo: Populacao):\n\n");
+    printf("Carta 1 - %s (%s): %u\n", cidade1, estado1, populacao1);
+    printf("Carta 2 - %s (%s): %u\n", cidade2, estado2, populacao2);
+
+    if (populacao1 > populacao2) {
+        printf("\nCarta 1 venceu!\n");
+    } else if (populacao1 < populacao2) {
+        printf("\nCarta 2 venceu!\n");
+    } else {
+        printf("\nEmpate!\n");
+    }
 
     return 0;
 }
